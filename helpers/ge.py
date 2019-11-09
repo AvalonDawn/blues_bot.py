@@ -15,7 +15,7 @@ class GrandExchange:
             raise MissingQuery("You must enter a search term")
 
         # Search for ID number from query
-        file = open('/home/pi/blues_bot.py/assets/item_ids.json')
+        file = open('assets/item_ids.json')
         id_list = json.load(file)
         item_id = ""
         for i in id_list:

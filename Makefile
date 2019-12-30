@@ -19,8 +19,8 @@ update:
 	git stash
 	git pull --rebase origin master
 	git stash pop
-	# Show 5 latest commits
-	git log --pretty=format:"%Cred%h %Creset%s" -5
+	# Show 5 latest commits from origin/master
+	git log origin/master --pretty=format:"%Cred%h %Creset%s" -5
 
 both: update start
 

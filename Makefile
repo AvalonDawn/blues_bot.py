@@ -24,6 +24,12 @@ update:
 
 both: update start
 
+push:
+	# Stash changes, then push
+	git stash
+	git push
+	git stash pop
+
 submodule:
 	cd cogs/embed_help
 	git stash

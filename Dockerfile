@@ -11,3 +11,7 @@ RUN apt update && \
 
 ADD . /
 CMD [ "sh", "/start_bot.sh" ]
+
+#RUN git clone https://github.com/zedchance/blues_bot.py.git
+#RUN rm -rf blues_bot.py/cogs/embed_help
+#RUN git clone https://github.com/zedchance/embed_help.git blues_bot.py/cogs/embed_help
